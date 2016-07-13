@@ -1,6 +1,8 @@
 ﻿带有社交功能的android文章阅读软件
 后台使用thinkphp
 
+演示文件： 链接: http://pan.baidu.com/s/1slSWM0t 密码: 3984
+
 1.1.1文章阅读模块
 负责显示文章，上下滑动，字体放缩。
 
