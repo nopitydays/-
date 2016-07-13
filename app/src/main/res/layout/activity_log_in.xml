@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_above="@+id/inputlayout"
+        android:layout_marginBottom="80dp"/>
+
+    <LinearLayout
+        android:id="@+id/inputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/login_userinput_layout">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:padding="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/usr"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <EditText
+                    android:id="@+id/username_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:inputType="text"
+                    android:hint="Username"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:background="@null"/>
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@drawable/login_passinput_layout">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:padding="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/psword"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorWhite">
+
+                <EditText
+                    android:id="@+id/password_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:background="@null"/>
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signin"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/inputlayout"
+        android:background="@drawable/login_submit_button"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <RelativeLayout
+        android:id="@+id/signup_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:background="@drawable/login_signup_bar">
+
+        <TextView
+            android:id="@+id/signup_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorWhite"
+            />
+
+        <ImageView
+            android:id="@+id/signup_image"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="11dp"
+            android:src="@drawable/icon__go"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

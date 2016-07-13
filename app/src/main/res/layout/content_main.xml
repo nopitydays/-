@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.upload.yannadams.trailarticles.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/vp_indicator" />
+        <!--侧滑栏内容必须放在drowlayout最后面-->
+        <LinearLayout
+            android:id="@+id/drawer_view"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            android:background="#007ACF"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.upload.yannadams.trailarticles.RoundImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/head"
+                    android:src="@drawable/head"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    android:text="用户名"
+                    android:id="@+id/username"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/text_seletor"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#E0E0E0">
+
+            </View>
+
+
+            <TextView
+                android:text="我的好友"
+                android:id="@+id/MyFri"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:background="@drawable/text_seletor"
+                />
+            <TextView
+                android:text="我的收藏"
+                android:id="@+id/MyCol"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:background="@drawable/text_seletor"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#E0E0E0">
+
+            </View>
+
+            <TextView
+                android:text="编辑信息"
+                android:id="@+id/EditPer"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:background="@drawable/text_seletor"
+                />
+            <TextView
+                android:text="退出"
+                android:id="@+id/Exit"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:background="@drawable/text_seletor"
+                />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</RelativeLayout>

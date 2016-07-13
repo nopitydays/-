@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.upload.yannadams.trailarticles.HomePage"
+    tools:showIn="@layout/activity_home_page">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:text="今日推荐"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_marginTop="4dp"
+                android:background="#AAAAAA">
+
+            </View>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="58dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </android.support.v4.view.ViewPager>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1.0"
+                android:id="@+id/home"
+                android:text="首页"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:textColor="#CC007ACF"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1.0"
+                android:id="@+id/square"
+                android:text="广场"
+                android:gravity="center"
+                android:background="#CC007ACF"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1.0"
+                android:id="@+id/dynamic"
+                android:text="动态"
+                android:gravity="center"
+                android:background="#CC007ACF"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <!--侧滑栏内容必须放在drowlayout最后面-->
+        <LinearLayout
+            android:id="@+id/drawer_view"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            android:background="#007ACF"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.upload.yannadams.trailarticles.RoundImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/head"
+                    android:src="@drawable/head"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    android:text="用户名"
+                    android:id="@+id/username"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/text_seletor"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#E0E0E0">
+
+            </View>
+
+
+            <TextView
+                android:text="我的好友"
+                android:id="@+id/MyFri"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:background="@drawable/text_seletor"
+                />
+            <TextView
+                android:text="我的收藏"
+                android:id="@+id/MyClt"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:background="@drawable/text_seletor"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#E0E0E0">
+
+            </View>
+
+            <TextView
+                android:text="编辑信息"
+                android:id="@+id/EditPer"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:background="@drawable/text_seletor"
+                />
+            <TextView
+                android:text="退出"
+                android:id="@+id/Exit"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:background="@drawable/text_seletor"
+                />
+
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+</LinearLayout>

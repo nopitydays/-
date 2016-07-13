@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_gray">#959595</color>
+    <color name="background_gray">#f2f2f2</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <!-- toolbar（actionbar）颜色 -->
+    <color name="colorTag">#9cbbf1</color>
+
+
+    <color name="colorPrimary">#01aeee</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#0b86b4</color>
+</resources>
